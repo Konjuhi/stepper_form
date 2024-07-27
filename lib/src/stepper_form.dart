@@ -171,8 +171,8 @@ class StepperFormState extends ConsumerState<StepperForm>
             height: 35,
             horizontalPadding: 26,
             verticalPadding: 20,
-            style: TextStyle(
-              color: Colors.white,
+            style: const TextStyle(
+              color: Colors.black,
             ),
             onPressed: toggleDraft,
             text: hasDraftData
@@ -188,7 +188,9 @@ class StepperFormState extends ConsumerState<StepperForm>
         Flexible(
           child: FadeTransition(
             opacity: _ghostButtonController,
-            child: GhostButton(
+            child: GhostButton
+              (
+              style: const TextStyle(color: Colors.black),
               verticalPadding: 20,
               horizontalPadding: 26,
               onPressed: _prevStep,

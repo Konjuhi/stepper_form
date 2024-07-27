@@ -86,7 +86,7 @@ class GhostButton extends StatelessWidget {
       elevation: elevation,
       child: Text(
         text,
-        style: style
+        style: style??const TextStyle(color: Colors.black)
       ),
     );
   }

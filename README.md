@@ -16,7 +16,7 @@ To start using the `stepper_form` package, add it to your `pubspec.yaml` by spec
 
 ```yaml
 dependencies:
- flutter_riverpod:any
+  flutter_riverpod:any
   stepper_form:
     git:
       url: https://github.com/arditkonjuhi/stepper_form.git
